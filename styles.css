@@ -58,7 +58,7 @@ a {
 }
 .btn {
   border-radius: 10px;
-  padding: 0.5rem 1.25rem;
+  padding: 0.75rem 1.5rem;
   border: 2px solid var(--secondary-color);
   text-transform: uppercase;
   color: var(--white);
@@ -200,15 +200,16 @@ a {
 .hero-content h1 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 2rem;
 }
 .hero-content #name {
   padding: 2rem 0;
   color: var(--light);
+  font-size: 2rem;
 }
 
 .hero-content #occupation {
   margin: 3.25rem 0;
+  font-size: 2.25rem;
 }
 
 .buttons {
@@ -374,6 +375,20 @@ footer .container h3 {
 }
 /* Tablet */
 @media screen and (min-width: 768px) {
+  .hero-content #name {
+    font-size: 2.5rem;
+  }
+
+  .hero-content #occupation {
+    font-size: 3rem;
+  }
+  .buttons {
+    flex-direction: row;
+  }
+  .buttons #portfolio,
+  .buttons #hire-me {
+    margin: 0 2rem;
+  }
   .projects-container.grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -385,5 +400,13 @@ footer .container h3 {
   .projects-container.grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+
+  .hero-content #name {
+    font-size: 3rem;
+  }
+
+  .hero-content #occupation {
+    font-size: 3.5rem;
   }
 }
