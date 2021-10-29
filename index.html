@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Ndzalama Mabasa | Full-Stack Web Developer</title>
   </head>
@@ -37,7 +44,7 @@
             </h1>
           </div>
           <div class="buttons flex">
-            <a href="" class="btn-primary btn">portfolio</a>
+            <a href="" class="btn-primary btn" id="portfolio-btn">portfolio</a>
             <a href="" class="btn-transparent btn" id="hire-me">Hire me</a>
           </div>
         </div>
@@ -49,10 +56,16 @@
             <h1 class="flex">
               <img src="images/arrow.svg" alt="" /><span>About me</span>
             </h1>
+
             <p>
-              I am a Full-Stack Web Developer specializing in WordPress,
-              WooCommerce, Shopify and custom websites design, SQL database
-              design, SEO, websites migration and maintenace.
+              I am a Full-Stack Web Developer with 1 Year Experience of working
+              as a freelancer and 5 months of corporate experience as part of a
+              marketing agency.
+            </p>
+            <p>
+              I specialize in WordPress, WooCommerce, Shopify and custom
+              websites design, SQL database design, SEO, websites migration and
+              maintenace.
             </p>
 
             <!-- <div class="btn-primary btn">More about me</div> -->
@@ -67,7 +80,7 @@
             </h1>
           </div>
 
-          <div class="projects-container">
+          <div class="projects-container grid">
             <!-- Maemo1 Project -->
             <div class="project">
               <h2>Maemo1 Medicals</h2>
@@ -75,30 +88,51 @@
                 Maemo1 Medicals is a website for an Occupational Health Care
                 Services Provider company.
               </p>
-              <ul class="technologies">
-                <li>WordPress</li>
-              </ul>
+              <div class="technologies-container">
+                <h4>TECH-STACK</h4>
+                <div class="technologies">
+                  <ul class="tech-1">
+                    <li>WordPress</li>
+                  </ul>
+                </div>
+              </div>
               <div class="project-links">
-                <a href="">GitHub Repo</a>
-                <a href="">Website</a>
+                <a href=""
+                  ><i class="fab fa-github fa-lg"></i><span>GitHub Repo</span>
+                </a>
+                <a href="https://maemo1medicals.co.za/"
+                  ><i class="fas fa-globe fa-lg"></i><span>Website</span>
+                </a>
               </div>
             </div>
             <!-- Lsghealth Project -->
             <div class="project">
-              <h2>lsghealth</h2>
+              <h2>Lsg-Health</h2>
               <p>
                 LsgHealth is a website for an Occupational Health Care Services
                 Provider company.
               </p>
-              <ul class="technologies">
-                <li>HTML5</li>
-                <li>SASS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-              </ul>
+              <div class="technologies-container">
+                <h4>TECH-STACK</h4>
+                <div class="technologies">
+                  <ul class="tech-1">
+                    <li>HTML5</li>
+                    <li>SASS</li>
+                  </ul>
+                  <ul class="tech-2">
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                  </ul>
+                </div>
+              </div>
+
               <div class="project-links">
-                <a href="">GitHub Repo</a>
-                <a href="">Website</a>
+                <a href=""
+                  ><i class="fab fa-github fa-lg"></i><span>GitHub Repo</span>
+                </a>
+                <a href="https://lsghealth.co.za/"
+                  ><i class="fas fa-globe fa-lg"></i><span>Website</span>
+                </a>
               </div>
             </div>
             <!-- 4DPSS Project -->
@@ -108,12 +142,21 @@
                 4D Proactive Security Services (4DPSS) is a website for a
                 Security Services Provider company.
               </p>
-              <ul class="technologies">
-                <li>WordPress</li>
-              </ul>
+              <div class="technologies-container">
+                <h4>TECH-STACK</h4>
+                <div class="technologies">
+                  <ul class="tech-1">
+                    <li>WordPress</li>
+                  </ul>
+                </div>
+              </div>
               <div class="project-links">
-                <a href="">GitHub Repo</a>
-                <a href="">Website</a>
+                <a href=""
+                  ><i class="fab fa-github fa-lg"></i><span>GitHub Repo</span>
+                </a>
+                <a href="https://4dpss.co.za/"
+                  ><i class="fas fa-globe fa-lg"></i><span>Website</span>
+                </a>
               </div>
             </div>
           </div>
@@ -126,12 +169,18 @@
               <img src="images/arrow.svg" alt="" /><span>Technical Skills</span>
             </h1>
           </div>
-          <div class="skills-container">
-            <div class="skill">HTML5</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">PHP</div>
-            <div class="skill">MySQL</div>
+          <div class="skills-container grid">
+            <div class="skill"><i class="fab fa-html5 fa-7x"></i></div>
+            <div class="skill"><i class="fab fa-css3-alt fa-7x"></i></div>
+            <div class="skill"><i class="fab fa-js-square fa-7x"></i></div>
+            <div class="skill"><i class="fab fa-php fa-7x"></i></div>
+            <div class="skill"><i class="fab fa-sass fa-7x"></i></div>
+
+            <!-- <div class="skill"></div>
+            <div class="skill"></div>
+            <div class="skill"></div>
+            <div class="skill"></div>
+            <div class="skill"></div> -->
           </div>
         </div>
       </section>
