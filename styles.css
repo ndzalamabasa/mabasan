@@ -13,7 +13,7 @@ body {
 /* Colors */
 :root {
   --primary-color: #00325b;
-  --secondary-color: #008cff;
+  --secondary-color: #005daa;
   --white: #ffffff;
   --text: #393939;
   --light: #f1f1f1;
@@ -28,6 +28,14 @@ h5,
 h6 {
   font-family: 'Roboto Slab', serif;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
 .container {
   width: 90vw;
   margin: 0 auto;
@@ -35,11 +43,9 @@ h6 {
 .flex {
   display: flex;
 }
-
-a {
-  text-decoration: none;
+.grid {
+  display: grid;
 }
-
 .btn {
   border-radius: 10px;
   padding: 0.5rem 1.25rem;
@@ -125,17 +131,20 @@ a {
 
 .hero-content {
   height: 100%;
+  width: 100%;
 }
 .hero-content h1 {
   text-transform: uppercase;
   text-align: center;
+  font-size: 2rem;
 }
 .hero-content #name {
   padding: 2rem 0;
+  color: var(--light);
 }
 
 .hero-content #occupation {
-  margin: 2rem 0;
+  margin: 1.5rem 0 2.25rem;
 }
 
 .buttons {
@@ -145,12 +154,12 @@ a {
 }
 
 .buttons #hire-me {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 /* About Me */
 .about-me-content p {
-  padding: 1.75rem 0;
+  padding: 1.75rem 0 0;
 }
 
 /* Portfolio */
@@ -158,15 +167,76 @@ a {
   padding: 1.75rem 0;
 }
 .portfolio .project {
+  position: relative;
   margin: 1rem 0;
+  padding: 1rem 0.75rem;
+  color: var(--light);
   background-color: var(--primary-color);
   border-radius: 20px;
   border-bottom: 10px solid var(--secondary-color);
 }
-.portfolio {
-  color: var(--light);
+
+.project h2 {
+  color: var(--white);
+  text-align: center;
 }
 
-.portfolio h2 {
+.project p {
+  padding: 1rem 0;
+}
+.technologies-container {
+  padding: 0.5rem 0 4.5rem;
+  text-align: center;
+}
+.project .technologies {
+  display: flex;
+  justify-content: space-around;
+}
+
+.technologies ul li {
+  padding: 0.25rem 0;
+  list-style: circle;
+}
+.project .project-links {
+  position: absolute;
+  bottom: 30px;
+  margin-top: 1.75rem;
+  text-align: center;
+}
+.project-links a {
   color: var(--white);
+  margin: 0 0.75rem;
+  text-decoration: underline;
+}
+
+.project-links i {
+  padding-right: 0.5rem;
+}
+/* Tech Skills */
+.technical-skills .skills-container {
+  margin: 2rem 0;
+}
+.skills-container.grid {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.skills-container i {
+  color: var(--primary-color);
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .projects-container.grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .projects-container.grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
