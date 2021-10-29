@@ -39,6 +39,10 @@ h6 {
   font-family: 'Roboto Slab', serif;
 }
 
+h1 {
+  font-size: 1.75rem;
+}
+
 li {
   list-style: none;
 }
@@ -81,7 +85,7 @@ a {
 .portfolio,
 .technical-skills,
 .contact {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 /* Header */
 
@@ -95,6 +99,9 @@ a {
   top: 0;
 
   z-index: 5;
+}
+#header-logo img {
+  width: 150px;
 }
 .header-menu .container {
   justify-content: space-between;
@@ -237,8 +244,11 @@ a {
 }
 
 /* Portfolio */
+.portfolio {
+  background-color: var(--light);
+}
 .portfolio .projects-container {
-  padding: 1.75rem 0;
+  padding: 1.75rem 0 0;
 }
 .portfolio .project {
   position: relative;
@@ -250,6 +260,9 @@ a {
   border-bottom: 10px solid var(--secondary-color);
 }
 
+.project {
+  position: relative;
+}
 .project h2 {
   color: var(--white);
   text-align: center;
@@ -274,6 +287,8 @@ a {
 .project .project-links {
   position: absolute;
   bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 1.75rem;
   text-align: center;
 }
@@ -288,19 +303,31 @@ a {
 }
 /* Tech Skills */
 .technical-skills .skills-container {
-  margin: 2rem 0;
+  margin: 2rem 0 0;
 }
 .skills-container.grid {
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 20px;
+  row-gap: 30px;
   justify-items: center;
   align-items: center;
 }
 .skills-container i {
   color: var(--primary-color);
 }
+.skill {
+  flex-direction: column;
+  align-items: center;
+}
 
+.skill span {
+  padding-top: 0.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
 /* Contact */
+.contact {
+  background-color: var(--light);
+}
 .contact-form li {
   margin-top: 1.75rem;
 }
@@ -375,6 +402,9 @@ footer .container h3 {
 }
 /* Tablet */
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+  }
   .hero-content #name {
     font-size: 2.5rem;
   }
@@ -389,17 +419,66 @@ footer .container h3 {
   .buttons #hire-me {
     margin: 0 2rem;
   }
+
+  .about-me .container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+  }
+
+  .img-container #profile-pic {
+    height: 250px;
+    width: 250px;
+    margin: 0;
+  }
   .projects-container.grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  .skills-container.grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contact .other-contacts ul {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  footer h3,
+  footer .footer-nav,
+  footer .social-media-links {
+    display: none;
+  }
+
+  footer .copyright {
+    margin: 0;
   }
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
-  .projects-container.grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  .header-menu .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    transform: translateX(0);
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 0;
+  }
+  .menu li {
+    padding: 0 0 0 1.5rem;
+    text-align: right;
+  }
+  .menu a {
+    color: var(--primary-color);
   }
 
   .hero-content #name {
@@ -408,5 +487,14 @@ footer .container h3 {
 
   .hero-content #occupation {
     font-size: 3.5rem;
+  }
+
+  .projects-container.grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .skills-container.grid {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
