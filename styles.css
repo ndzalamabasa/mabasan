@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--text);
+}
+/* Colors */
+:root {
+  --primary-color: #00325b;
+  --secondary-color: #008cff;
+  --white: #ffffff;
+  --text: #393939;
+  --light: #f1f1f1;
+}
+
+/* Global Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', serif;
+}
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid var(--secondary-color);
+  text-transform: uppercase;
+  color: var(--white);
+
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+}
+
+.section-content h1 {
+  align-items: center;
+  color: var(--primary-color);
+}
+.section-content h1 span {
+  padding-left: 0.75rem;
+}
+.about-me,
+.portfolio,
+.technical-skills,
+.contact {
+  padding: 2rem 0;
+}
+/* Header */
+
+.header-menu {
+  padding: 0.5rem 0;
+  height: 60px;
+  background-color: var(--white);
+}
+.header-menu .container {
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-btn,
+.menu-btn::before,
+.menu-btn::after {
+  width: 1.25em;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: transform 250ms ease-in-out;
+}
+.menu-btn {
+  width: 1.5em;
+  display: block;
+  position: relative;
+}
+.menu-btn::before,
+.menu-btn::after {
+  content: '';
+  position: absolute;
+  right: 0;
+}
+.menu-btn::before {
+  bottom: 8px;
+}
+.menu-btn::after {
+  top: 8px;
+}
+
+/* Main */
+/* Hero Section */
+
+.hero {
+  background: linear-gradient(rgba(0, 50, 91, 0.9), rgba(0, 50, 91, 0.9)),
+    url('images/bg-small.jpg') no-repeat center;
+  background-color: var(--primary-color);
+  height: calc(100vh - 60px);
+}
+.hero .container {
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+
+  color: var(--white);
+  padding: 2rem 0;
+}
+
+.hero-content {
+  height: 100%;
+}
+.hero-content h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.hero-content #name {
+  padding: 2rem 0;
+}
+
+.hero-content #occupation {
+  margin: 2rem 0;
+}
+
+.buttons {
+  position: relative;
+  bottom: 0;
+  flex-direction: column;
+}
+
+.buttons #hire-me {
+  margin-top: 2rem;
+}
+
+/* About Me */
+.about-me-content p {
+  padding: 1.75rem 0;
+}
+
+/* Portfolio */
+.portfolio .projects-container {
+  padding: 1.75rem 0;
+}
+.portfolio .project {
+  margin: 1rem 0;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border-bottom: 10px solid var(--secondary-color);
+}
+.portfolio {
+  color: var(--light);
+}
+
+.portfolio h2 {
+  color: var(--white);
+}

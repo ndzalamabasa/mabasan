@@ -4,133 +4,166 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Ndzalama Mabasa | Full-Stack Web Developer</title>
   </head>
   <body>
-    <header>
-      <div id="header-logo"></div>
-      <nav>
-        <div id="menu-btn"></div>
-        <!-- <ul>
+    <header class="header-menu">
+      <div class="container flex">
+        <a href="index.html" id="header-logo"
+          ><img src="images/mabasan-logo.svg" alt=""
+        /></a>
+        <nav>
+          <div class="menu-btn"></div>
+          <!-- <ul>
           <li><a href="index.html">home</a></li>
           <li><a href=""></a>about me</li>
           <li><a href=""></a>portfolio</li>
           <li><a href=""></a>technical skills</li>
           <li><a href=""></a>contact me</li>
         </ul> -->
-      </nav>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <div class="hero-content">
-          <p>Hi, I am</p>
-          <h1>ndzalama mabasa</h1>
-          <h1>full-stack <span>web developer</span></h1>
-        </div>
-        <div class="buttons">
-          <a href="" class="btn-primary btn">portfolio</a>
-          <a href="" class="btn-transparent btn">Hire me</a>
+        <div class="container flex">
+          <div class="hero-content">
+            <p>Hi, I am</p>
+            <h1 id="name">ndzalama mabasa</h1>
+            <h1 id="occupation">
+              full-stack <br />
+              web developer
+            </h1>
+          </div>
+          <div class="buttons flex">
+            <a href="" class="btn-primary btn">portfolio</a>
+            <a href="" class="btn-transparent btn" id="hire-me">Hire me</a>
+          </div>
         </div>
       </section>
       <section class="about-me">
-        <img src="" alt="" />
-        <div class="about-me-content">
-          <h1>About me</h1>
-          <p>
-            I am a Full-Stack Web Developer specializing in WordPress,
-            WooCommerce, Shopify and custom websites design, SQL database
-            design, SEO, websites migration and maintenace.
-          </p>
+        <div class="container">
+          <img src="" alt="" />
+          <div class="about-me-content section-content">
+            <h1 class="flex">
+              <img src="images/arrow.svg" alt="" /><span>About me</span>
+            </h1>
+            <p>
+              I am a Full-Stack Web Developer specializing in WordPress,
+              WooCommerce, Shopify and custom websites design, SQL database
+              design, SEO, websites migration and maintenace.
+            </p>
 
-          <div class="btn-primary btn">More about me</div>
+            <!-- <div class="btn-primary btn">More about me</div> -->
+          </div>
         </div>
       </section>
       <section class="portfolio">
-        <h1>Portfolio</h1>
-        <div class="projects-container">
-          <!-- Maemo1 Project -->
-          <div class="project">
-            <h1>Maemo1 Medicals</h1>
-            <p>
-              Maemo1 Medicals is a website for an Occupational Health Care
-              Services Provider company.
-            </p>
-            <ul class="technologies">
-              <li>WordPress</li>
-            </ul>
-            <div class="project-links">
-              <a href="">GitHub Repo</a>
-              <a href="">Website</a>
-            </div>
+        <div class="container">
+          <div class="portfolio-content section-content">
+            <h1 class="flex">
+              <img src="images/arrow.svg" alt="" /><span>Portfolio</span>
+            </h1>
           </div>
-          <!-- Lsghealth Project -->
-          <div class="project">
-            <h1>lsghealth</h1>
-            <p>
-              LsgHealth is a website for an Occupational Health Care Services
-              Provider company.
-            </p>
-            <ul class="technologies">
-              <li>HTML5</li>
-              <li>SASS</li>
-              <li>JavaScript</li>
-              <li>PHP</li>
-            </ul>
-            <div class="project-links">
-              <a href="">GitHub Repo</a>
-              <a href="">Website</a>
+
+          <div class="projects-container">
+            <!-- Maemo1 Project -->
+            <div class="project">
+              <h2>Maemo1 Medicals</h2>
+              <p>
+                Maemo1 Medicals is a website for an Occupational Health Care
+                Services Provider company.
+              </p>
+              <ul class="technologies">
+                <li>WordPress</li>
+              </ul>
+              <div class="project-links">
+                <a href="">GitHub Repo</a>
+                <a href="">Website</a>
+              </div>
             </div>
-          </div>
-          <!-- 4DPSS Project -->
-          <div class="project">
-            <h1>4DPSS</h1>
-            <p>
-              4D Proactive Security Services (4DPSS) is a website for a Security
-              Services Provider company.
-            </p>
-            <ul class="technologies">
-              <li>WordPress</li>
-            </ul>
-            <div class="project-links">
-              <a href="">GitHub Repo</a>
-              <a href="">Website</a>
+            <!-- Lsghealth Project -->
+            <div class="project">
+              <h2>lsghealth</h2>
+              <p>
+                LsgHealth is a website for an Occupational Health Care Services
+                Provider company.
+              </p>
+              <ul class="technologies">
+                <li>HTML5</li>
+                <li>SASS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+              </ul>
+              <div class="project-links">
+                <a href="">GitHub Repo</a>
+                <a href="">Website</a>
+              </div>
+            </div>
+            <!-- 4DPSS Project -->
+            <div class="project">
+              <h2>4DPSS</h2>
+              <p>
+                4D Proactive Security Services (4DPSS) is a website for a
+                Security Services Provider company.
+              </p>
+              <ul class="technologies">
+                <li>WordPress</li>
+              </ul>
+              <div class="project-links">
+                <a href="">GitHub Repo</a>
+                <a href="">Website</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="technical-skills">
-        <h1>Technical Skills</h1>
-        <div class="skills-container">
-          <div class="skill">HTML5</div>
-          <div class="skill">CSS</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">PHP</div>
-          <div class="skill">MySQL</div>
+        <div class="container">
+          <div class="portfolio-content section-content">
+            <h1 class="flex">
+              <img src="images/arrow.svg" alt="" /><span>Technical Skills</span>
+            </h1>
+          </div>
+          <div class="skills-container">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">PHP</div>
+            <div class="skill">MySQL</div>
+          </div>
         </div>
       </section>
       <section class="contact">
-        <h1>Get in Touch</h1>
-        <form id="contact-form" action="" method="post">
-          <ul>
-            <li>
-              <label for="name">Fullname</label>
-              <input type="text" name="fullname" id="" />
-            </li>
-            <li>
-              <label for="name">Email</label>
-              <input type="email" name="email" id="" />
-            </li>
-            <li>
-              <label for="name">Subject</label>
-              <input type="text" name="subject" id="" />
-            </li>
-            <li>
-              <label for="name">Message</label>
-              <textarea name="message" id="" cols="30" rows="10"></textarea>
-            </li>
-          </ul>
-          <input type="submit" value="Send" />
-        </form>
+        <div class="container">
+          <div class="contact-me-content section-content">
+            <h1 class="flex">
+              <img src="images/arrow.svg" alt="" /><span>Contact Me</span>
+            </h1>
+          </div>
+          <form id="contact-form" action="" method="post">
+            <ul>
+              <li>
+                <label for="name">Fullname</label>
+                <input type="text" name="fullname" id="" />
+              </li>
+              <li>
+                <label for="name">Email</label>
+                <input type="email" name="email" id="" />
+              </li>
+              <li>
+                <label for="name">Subject</label>
+                <input type="text" name="subject" id="" />
+              </li>
+              <li>
+                <label for="name">Message</label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+              </li>
+            </ul>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
       </section>
     </main>
     <footer>
