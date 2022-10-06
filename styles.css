@@ -113,6 +113,7 @@ a {
   width: 90%;
   margin: 0 auto;
   padding: 1rem 1.25rem;
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
