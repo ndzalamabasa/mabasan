@@ -198,6 +198,7 @@ a {
     url("images/bg-small.jpg") no-repeat center;
   background-color: var(--primary-color);
   height: calc(100vh - 60px);
+  padding: 15rem 0;
 }
 .hero .container {
   flex-direction: column;
@@ -210,7 +211,6 @@ a {
 }
 
 .hero-content {
-  /* height: 100%; */
   width: 100%;
 }
 .hero-content h1 {
@@ -224,7 +224,7 @@ a {
 }
 
 .hero-content #occupation {
-  margin: 3.25rem 0;
+  margin-bottom: 1.25rem;
   font-size: 2.25rem;
 }
 
