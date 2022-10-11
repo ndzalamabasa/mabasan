@@ -90,8 +90,7 @@ a {
 /* Header */
 
 .header-menu {
-  padding: 0.5rem 0;
-  height: 60px;
+  height: 5rem;
   background-color: var(--white);
 
   position: fixed;
