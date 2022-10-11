@@ -71,6 +71,11 @@ a {
   font-weight: 600;
 
   width: 13rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(0.95);
 }
 
 .btn-primary {
@@ -80,16 +85,15 @@ a {
 
 .section-content h1 {
   align-items: center;
+  padding-bottom: 2rem;
   color: var(--primary-color);
 }
 .section-content h1 span {
   padding-left: 0.75rem;
 }
-.about-me,
-.portfolio,
-.technical-skills,
-.contact {
-  padding: 3rem 0;
+
+section {
+  padding: 5rem 0;
 }
 /* Header */
 
@@ -187,8 +191,6 @@ a {
 .menu-open .menu {
   transform: translateX(0);
 }
-/* Main */
-/* Hero Section */
 
 .hero {
   background: linear-gradient(rgba(0, 50, 91, 0.8), rgba(0, 50, 91, 0.8)),
@@ -245,10 +247,9 @@ a {
   text-align: center;
 }
 .about-me #profile-pic {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Portfolio */
@@ -266,10 +267,12 @@ a {
   background-color: var(--primary-color);
   border-radius: 20px;
   border-bottom: 10px solid var(--secondary-color);
+  text-align: center;
 }
 
 .project {
   position: relative;
+  text-align: center;
 }
 .project h2 {
   color: var(--white);
@@ -282,6 +285,9 @@ a {
 .technologies-container {
   padding: 0.5rem 0 4.5rem;
   text-align: center;
+}
+.technologies-container h4 {
+  padding: 1rem 0;
 }
 .project .technologies {
   display: flex;
@@ -372,7 +378,6 @@ footer .container h3 {
   padding: 0.25rem;
 }
 .footer-nav a {
-  text-transform: uppercase;
   color: var(--light);
   font-size: 14px;
 }
@@ -422,8 +427,7 @@ footer .container h3 {
   }
 
   .img-container #profile-pic {
-    height: 250px;
-    width: 250px;
+    border-radius: 5rem;
     margin: 0;
   }
   .projects-container.grid {
