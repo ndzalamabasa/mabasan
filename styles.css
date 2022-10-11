@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;300;400&family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -17,9 +17,7 @@ html {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
-
-  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
   color: var(--text);
 }
 /* Colors */
@@ -38,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 
 h1 {
@@ -94,12 +92,10 @@ a {
 .header-menu {
   padding: 0.5rem 0;
   height: 60px;
-  /* background-color: var(--white); */
+  background-color: var(--white);
 
   position: fixed;
-
   width: 100vw;
-  margin: 0 auto;
   top: 0;
 
   z-index: 5;
@@ -107,29 +103,20 @@ a {
 #header-logo img {
   width: 150px;
 }
-.header-menu nav {
-  background-color: var(--white);
-  border-radius: 25rem;
-  width: 90%;
-  margin: 0 auto;
-  padding: 1rem 1.25rem;
-  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
+.header-menu .container {
   justify-content: space-between;
+  align-items: center;
 }
-
 .menu-btn,
 .menu-btn::before,
 .menu-btn::after {
-  width: 1.5rem;
-  height: 2.5px;
-  border-radius: 0.5rem;
+  width: 1.25em;
+  height: 2px;
   background-color: var(--primary-color);
   transition: transform 250ms ease-in-out;
 }
 .menu-btn {
-  width: 1.5rem;
+  width: 1.5em;
   display: block;
   position: relative;
 }
@@ -180,7 +167,7 @@ a {
   justify-content: end;
 }
 .menu a {
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   color: var(--light);
 }
 
@@ -192,13 +179,16 @@ a {
 .menu-open .menu {
   transform: translateX(0);
 }
+/* Main */
+/* Hero Section */
 
 .hero {
   background: linear-gradient(rgba(0, 50, 91, 0.9), rgba(0, 50, 91, 0.9)),
     url("images/bg-small.jpg") no-repeat center;
   background-color: var(--primary-color);
   height: calc(100vh - 60px);
-  padding: 15rem 0;
+
+  margin-top: 60px;
 }
 .hero .container {
   flex-direction: column;
@@ -211,6 +201,7 @@ a {
 }
 
 .hero-content {
+  /* height: 100%; */
   width: 100%;
 }
 .hero-content h1 {
@@ -224,7 +215,7 @@ a {
 }
 
 .hero-content #occupation {
-  margin-bottom: 1.25rem;
+  margin: 3.25rem 0;
   font-size: 2.25rem;
 }
 
@@ -411,26 +402,6 @@ footer .container h3 {
 }
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .header-menu .menu-btn {
-    display: none;
-  }
-
-  .menu {
-    transform: translateX(0);
-    background-color: transparent;
-    display: flex;
-    position: relative;
-    height: auto;
-    width: auto;
-    padding: 0;
-  }
-  .menu li {
-    padding: 0 0 0 1.5rem;
-    text-align: right;
-  }
-  .menu a {
-    color: var(--primary-color);
-  }
   h1 {
     font-size: 2.25rem;
   }
@@ -489,6 +460,27 @@ footer .container h3 {
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
+  .header-menu .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    transform: translateX(0);
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 0;
+  }
+  .menu li {
+    padding: 0 0 0 1.5rem;
+    text-align: right;
+  }
+  .menu a {
+    color: var(--primary-color);
+  }
+
   .hero-content #name {
     font-size: 3rem;
   }
