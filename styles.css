@@ -103,8 +103,11 @@ a {
 
   z-index: 5;
 }
-#header-logo img {
-  width: 150px;
+#header-logo {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--primary-color);
 }
 .header-menu .container {
   justify-content: space-between;
@@ -171,8 +174,8 @@ a {
   justify-content: end;
 }
 .menu a {
-  text-transform: uppercase;
   color: var(--light);
+  font-weight: 500;
 }
 
 .menu .menu-btn,
