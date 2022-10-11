@@ -112,13 +112,14 @@ a {
 .menu-btn,
 .menu-btn::before,
 .menu-btn::after {
-  width: 1.25em;
-  height: 2px;
+  width: 2rem;
+  height: 3px;
+  border-radius: 1.5rem;
   background-color: var(--primary-color);
   transition: transform 250ms ease-in-out;
 }
 .menu-btn {
-  width: 1.5em;
+  width: 2rem;
   display: block;
   position: relative;
 }
@@ -129,15 +130,15 @@ a {
   right: 0;
 }
 .menu-btn::before {
-  bottom: 8px;
+  bottom: 0.625rem;
 }
 .menu-btn::after {
-  top: 8px;
+  top: 0.625rem;
 }
 
 .menu-open .menu-btn {
   transform: rotate(45deg);
-  width: 1.25em;
+  width: 2rem;
 }
 
 .menu-open .menu-btn::before {
@@ -145,7 +146,7 @@ a {
 }
 
 .menu-open .menu-btn::after {
-  transform: rotate(90deg) translate(-8px);
+  transform: rotate(90deg) translate(-0.625rem);
 }
 
 .menu {
@@ -333,20 +334,6 @@ a {
 .contact-form li {
   margin-top: 1.75rem;
 }
-/* .contact-form input,
-.contact-form textarea {
-  display: block;
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid var(--primary-color);
-} */
-
-/* .contact-form input[type='submit'] {
-  border: 0;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  margin-top: 2.75rem;
-} */
 
 .other-contacts {
   margin: 1.75rem 0 2.25rem;
