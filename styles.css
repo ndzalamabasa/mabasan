@@ -61,17 +61,19 @@ a {
   display: grid;
 }
 .btn {
-  border-radius: 10px;
+  border-radius: 1.5rem;
   padding: 0.75rem 1.5rem;
-  border: 2px solid var(--secondary-color);
-  text-transform: uppercase;
+  border: 2px solid var(--light);
   color: var(--white);
 
   text-align: center;
+
+  width: 13rem;
 }
 
 .btn-primary {
-  background-color: var(--secondary-color);
+  background-color: var(--light);
+  color: var(--primary-color);
 }
 
 .section-content h1 {
