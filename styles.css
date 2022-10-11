@@ -85,7 +85,7 @@ a {
 
 .section-content h1 {
   align-items: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   color: var(--primary-color);
 }
 .section-content h1 span {
