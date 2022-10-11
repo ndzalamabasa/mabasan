@@ -68,6 +68,7 @@ a {
   color: var(--white);
 
   text-align: center;
+  font-weight: 600;
 
   width: 13rem;
 }
@@ -190,8 +191,8 @@ a {
 /* Hero Section */
 
 .hero {
-  background: linear-gradient(rgba(0, 50, 91, 0.9), rgba(0, 50, 91, 0.9)),
-    url("images/bg-small.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 50, 91, 0.8), rgba(0, 50, 91, 0.8)),
+    url("images/dev.jpg") no-repeat center;
   background-color: var(--primary-color);
   height: calc(100vh - 60px);
 
@@ -212,11 +213,11 @@ a {
   width: 100%;
 }
 .hero-content h1 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
 }
 .hero-content #name {
-  padding: 2rem 0;
+  padding: 1.75rem 0;
   color: var(--light);
   font-size: 2rem;
 }
