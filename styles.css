@@ -90,6 +90,7 @@ a {
 /* Header */
 
 .header-menu {
+  display: grid;
   height: 5rem;
   background-color: var(--white);
 
