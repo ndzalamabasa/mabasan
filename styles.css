@@ -246,7 +246,7 @@ section {
 .about-me .img-container {
   text-align: center;
 }
-.about-me #profile-pic {
+.about-me img {
   width: 100%;
   border-radius: 2rem;
   margin-bottom: 2rem;
@@ -426,7 +426,7 @@ footer .container h3 {
     align-items: center;
   }
 
-  .img-container #profile-pic {
+  .img-container img {
     border-radius: 5rem;
     margin: 0;
   }
