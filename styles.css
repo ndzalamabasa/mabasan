@@ -422,6 +422,7 @@ footer .container h3 {
   color: var(--light);
   margin-top: 1.5rem;
 }
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   h1 {
