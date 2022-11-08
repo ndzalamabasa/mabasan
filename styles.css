@@ -161,7 +161,7 @@ section {
 
 .menu {
   z-index: 10;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   width: 90%;
   height: 100vh;
   padding: 1rem 0;
@@ -351,7 +351,7 @@ section {
   display: grid;
   align-items: center;
   justify-content: center;
-  
+
   margin-right: 0.5rem;
   height: 2.25rem;
   width: 2.25rem;
@@ -387,9 +387,7 @@ footer .container h3 {
 .footer-nav {
   margin: 1rem 0;
 }
-.footer-nav li {
-  padding: 0.25rem;
-}
+
 .footer-nav a {
   color: var(--light);
   font-size: 14px;
