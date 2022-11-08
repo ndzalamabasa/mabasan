@@ -60,6 +60,7 @@ a {
 }
 .grid {
   display: grid;
+  gap: 1rem;
 }
 .btn {
   border-radius: 1.5rem;
@@ -345,7 +346,7 @@ section {
 }
 
 .other-contacts {
-  margin: 1.75rem 0 2.25rem;
+  margin-top: 1.75rem;
   flex-direction: column;
   justify-content: center;
 }
