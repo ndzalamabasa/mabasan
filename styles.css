@@ -298,6 +298,27 @@ section {
   position: relative;
   text-align: center;
 }
+
+.maemo{
+  background: url('assets/images/maemo.jpg') no-repeat center/cover;
+  background-blend-mode: multiply;
+}
+
+.dpss{
+  background-image: url('assets/images/4dpss.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+.handyman{
+  background-image: url('assets/images/handyman.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
 .project h2 {
   color: var(--white);
   text-align: center;
@@ -464,7 +485,7 @@ footer .container h3 {
   }
 
   .img-container img {
-    border-radius: 5rem;
+    border-radius: 4rem;
     margin: 0;
   }
   .projects-container.grid {
