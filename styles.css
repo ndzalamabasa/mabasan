@@ -220,7 +220,7 @@ section {
 
 .hero {
   background: linear-gradient(rgba(0, 50, 91, 0.8), rgba(0, 50, 91, 0.8)),
-    url('images/dev.jpg') no-repeat center;
+    url('assets/images/dev.jpg') no-repeat center;
   background-color: var(--primary-color);
   height: calc(100vh - 60px);
 
