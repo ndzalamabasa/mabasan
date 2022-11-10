@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;300;400;700;800;900&family=Montserrat:wght@100;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;300;400;700;800;900&family=Montserrat:wght@100;300;400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   color: var(--text);
 }
@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
@@ -63,11 +63,11 @@ a {
   gap: 1rem;
 }
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 1.5rem;
   padding: 0.75rem 1.5rem;
-  border: 2px solid var(--light);
-  color: var(--white);
-
   text-align: center;
   font-weight: 600;
 
@@ -79,9 +79,22 @@ a {
   transform: scale(0.95);
 }
 
-.btn-primary {
+.btn-transparent {
+  border: 2px solid var(--light);
+  color: var(--white);
+}
+
+.btn-white {
   background-color: var(--light);
   color: var(--primary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--light);
+}
+.cv-download {
+  margin-top: 2rem;
 }
 
 .section-content h1 {
@@ -109,7 +122,7 @@ section {
   z-index: 5;
 }
 
-.nav-container{
+.nav-container {
   background-color: var(--white);
   display: grid;
   height: 100%;
@@ -117,7 +130,7 @@ section {
 }
 
 #header-logo {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: var(--primary-color);
@@ -142,7 +155,7 @@ section {
 }
 .menu-btn::before,
 .menu-btn::after {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
 }
@@ -179,7 +192,7 @@ section {
   transition: transform 250ms ease-in-out;
 }
 
-.menu ul{
+.menu ul {
   width: 90vw;
   margin: 0 auto;
 }
@@ -207,7 +220,7 @@ section {
 
 .hero {
   background: linear-gradient(rgba(0, 50, 91, 0.8), rgba(0, 50, 91, 0.8)),
-    url("images/dev.jpg") no-repeat center;
+    url('images/dev.jpg') no-repeat center;
   background-color: var(--primary-color);
   height: calc(100vh - 60px);
 
@@ -357,7 +370,7 @@ section {
   margin-top: 1.75rem;
 }
 
-.contact .icon{
+.contact .icon {
   background-color: var(--primary-color);
   color: var(--light);
   display: grid;
@@ -486,10 +499,10 @@ footer .container h3 {
     display: none;
   }
 
-  .menu{
+  .menu {
     transform: translateY(0);
     background-color: transparent;
-    
+
     position: relative;
     height: auto;
     width: auto;
@@ -498,11 +511,11 @@ footer .container h3 {
     margin: 0;
   }
 
-  .menu ul{
+  .menu ul {
     display: flex;
     width: auto;
   }
-    
+
   .menu li {
     padding: 0 0 0 1.5rem;
     text-align: right;
