@@ -290,7 +290,7 @@ section {
   padding: 1rem 0.75rem;
   color: var(--light);
   background-color: var(--primary-dark);
-  border-radius: 20px;
+  border-radius: 2rem;
   border-bottom: 10px solid var(--secondary-color);
   text-align: center;
 }
