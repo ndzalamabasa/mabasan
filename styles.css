@@ -300,19 +300,19 @@ section {
   text-align: center;
 }
 
-.maemo{
+.maemo {
   background: url('assets/images/maemo.jpg') no-repeat center/cover;
   background-blend-mode: multiply;
 }
 
-.dpss{
+.dpss {
   background-image: url('assets/images/4dpss.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
 }
-.handyman{
+.handyman {
   background-image: url('assets/images/handyman.jpg');
   background-size: cover;
   background-position: center;
@@ -367,7 +367,7 @@ section {
 }
 .skills-container.grid {
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 30px;
+  gap: 3rem 0;
   justify-items: center;
   align-items: center;
 }
