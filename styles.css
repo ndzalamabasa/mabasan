@@ -144,7 +144,7 @@ section {
 }
 .menu-btn::before,
 .menu-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
 }
@@ -207,14 +207,6 @@ section {
   background-color: var(--white);
 }
 
-.hero {
-  background: linear-gradient(rgba(0, 50, 91, 0.8), rgba(0, 50, 91, 0.8)),
-    url('assets/images/dev.jpg') no-repeat center;
-  background-color: var(--primary-color);
-  height: calc(100vh - 60px);
-
-  margin-top: 60px;
-}
 .hero .container {
   flex-direction: column;
   justify-content: space-around;
@@ -289,19 +281,19 @@ section {
 }
 
 .maemo {
-  background: url('assets/images/maemo.jpg') no-repeat center/cover;
+  background: url("assets/images/maemo.jpg") no-repeat center/cover;
   background-blend-mode: multiply;
 }
 
 .dpss {
-  background-image: url('assets/images/4dpss.jpg');
+  background-image: url("assets/images/4dpss.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
 }
 .handyman {
-  background-image: url('assets/images/handyman.jpg');
+  background-image: url("assets/images/handyman.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
