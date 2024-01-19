@@ -68,7 +68,11 @@ a {
   border-radius: 1.5rem;
   padding: 0.5rem 1.25rem;
   text-align: center;
+
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 600;
+  text-transform: capitalize;
 
   width: max-content;
   transition: transform 0.2s ease-in-out;
