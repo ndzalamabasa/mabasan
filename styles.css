@@ -91,6 +91,7 @@ a {
   background-color: var(--primary-color);
   color: var(--light);
 }
+
 .cv-download {
   margin-top: 2rem;
 }
@@ -212,33 +213,17 @@ a {
   background-color: var(--white);
 }
 
-.hero .container {
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-
-  color: var(--white);
-  padding: 2rem 0;
+.hero {
+  padding: 120px 0 80px;
 }
 
-.hero-content {
-  /* height: 100%; */
-  width: 100%;
-}
-.hero-content h1 {
-  /* text-transform: uppercase; */
-  text-align: center;
-}
-.hero-content #name {
-  padding: 1.75rem 0;
-  color: var(--light);
-  font-size: 2rem;
+.hero__heading {
+  font-size: 3rem;
+  line-height: 1;
 }
 
-.hero-content #occupation {
-  margin: 3.25rem 0;
-  font-size: 2.25rem;
+.hero__subheading {
+  font-weight: 600;
 }
 
 .buttons {
@@ -266,9 +251,11 @@ a {
 .portfolio {
   background-color: var(--light);
 }
+
 .portfolio .projects-container {
   padding: 1.75rem 0 0;
 }
+
 .portfolio .project {
   position: relative;
   margin: 1rem 0;
