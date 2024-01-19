@@ -41,18 +41,25 @@ li {
 a {
   text-decoration: none;
 }
+
+.header-logo {
+  line-height: 0;
+}
 .container {
   width: 90vw;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .flex {
   display: flex;
 }
+
 .grid {
   display: grid;
   gap: 1rem;
 }
+
 .btn {
   display: flex;
   justify-content: center;
