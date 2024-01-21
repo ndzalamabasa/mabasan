@@ -22,12 +22,11 @@ body {
 }
 /* Colors */
 :root {
-  --primary-color: #00325b;
-  --primary-dark: #001424;
-  --secondary-color: #005daa;
-  --white: #ffffff;
-  --text: #393939;
-  --light: #f1f1f1;
+  --primary-color: #022135;
+  --dark-shades: #141216;
+  --dark-accent: #637682;
+  --light-shades: #f1eaed;
+  --light-accent: #4aa2c0;
 }
 
 h1 {
@@ -64,7 +63,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--light);
+  border: 2px solid var(--dark-accent);
   border-radius: 1.5rem;
   padding: 0.5rem 1.25rem;
   text-align: center;
@@ -83,17 +82,19 @@ a {
 }
 
 .btn-transparent {
-  color: var(--white);
+  color: var(--light-shades);
 }
 
 .btn-white {
-  background-color: var(--light);
+  background-color: var(--light-shades);
+  border-color: var(--light-shades);
   color: var(--primary-color);
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
-  color: var(--light);
+  background-color: var(--light-accent);
+  border-color: var(--light-accent);
+  color: var(--dark-shades);
 }
 
 .cv-download {
@@ -113,6 +114,7 @@ a {
 
 .header-menu {
   position: fixed;
+  background-color: var(--primary-color);
   width: 100vw;
   top: 0;
 
@@ -120,7 +122,6 @@ a {
 }
 
 .nav-container {
-  background-color: var(--white);
   display: grid;
   padding: 1rem;
   height: 100%;
@@ -143,7 +144,7 @@ a {
   width: 1.5rem;
   height: 3px;
   border-radius: 1.5rem;
-  background-color: var(--primary-color);
+  background-color: var(--light-shades);
   transition: transform 250ms ease-in-out;
 }
 
@@ -198,30 +199,34 @@ a {
   width: 90vw;
   margin: 0 auto;
 }
+
 .menu-open .menu {
-  transform: translateY(0);
+  transform: translateX(0);
 }
+
 .menu li {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .menu li:first-child {
-  /* text-align: right; */
   justify-content: end;
 }
 .menu a {
-  color: var(--primary-color);
+  color: var(--light-shades);
   font-weight: 500;
 }
 
 .menu .menu-btn,
 .menu .menu-btn::before,
 .menu .menu-btn::after {
-  background-color: var(--white);
+  background-color: var(--light-shades);
 }
 
 .hero {
   padding: 120px 0 80px;
+  background-color: var(--primary-color);
+
+  display: grid;
 }
 
 .hero__heading {
@@ -256,7 +261,7 @@ a {
 
 /* Portfolio */
 .portfolio {
-  background-color: var(--light);
+  background-color: var(--dark-accent);
 }
 
 .portfolio .projects-container {
@@ -267,10 +272,10 @@ a {
   position: relative;
   margin: 1rem 0;
   padding: 1rem 0.75rem;
-  color: var(--light);
-  background-color: var(--primary-dark);
+  color: var(--light-shades);
+  background-color: var(--dark-shades);
   border-radius: 2rem;
-  border-bottom: 10px solid var(--secondary-color);
+  border-bottom: 10px solid var(--);
   text-align: center;
 }
 
@@ -300,7 +305,7 @@ a {
 }
 
 .project h2 {
-  color: var(--white);
+  color: var(--light-shades);
   text-align: center;
 }
 
@@ -332,7 +337,7 @@ a {
   text-align: center;
 }
 .project-links a {
-  color: var(--white);
+  color: var(--light-shades);
   margin: 0 0.75rem;
   text-decoration: underline;
 }
@@ -365,7 +370,7 @@ a {
 }
 /* Contact */
 .contact {
-  background-color: var(--light);
+  background-color: var(--light-shades);
 }
 .contact-form li {
   margin-top: 1.75rem;
@@ -373,7 +378,7 @@ a {
 
 .contact .icon {
   background-color: var(--primary-color);
-  color: var(--light);
+  color: var(--light-shades);
   display: grid;
   align-items: center;
   justify-content: center;
@@ -408,14 +413,14 @@ footer {
 }
 
 footer .container h3 {
-  color: var(--white);
+  color: var(--light-shades);
 }
 .footer-nav {
   margin: 1rem 0;
 }
 
 .footer-nav a {
-  color: var(--light);
+  color: var(--light-shades);
   font-size: 14px;
 }
 
@@ -520,9 +525,6 @@ footer .container h3 {
   .menu li {
     padding: 0 0 0 1.5rem;
     text-align: right;
-  }
-  .menu a {
-    color: var(--primary-color);
   }
 
   .hero-content #name {
