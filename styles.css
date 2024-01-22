@@ -420,12 +420,12 @@ a {
   gap: 0.5rem;
   font-size: 1.125rem;
   font-weight: 600;
-  background-color: var(--dark-accent);
+  background-color: var(--primary-color);
   width: 100%;
   border-radius: 1.25rem;
   padding-right: 0.5rem;
   overflow: auto;
-  color: var(--dark-shades);
+  color: var(--light-shades);
 }
 
 ::-webkit-scrollbar {
