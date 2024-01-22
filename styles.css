@@ -15,22 +15,61 @@ html {
   }
 }
 
-body {
-  font-family: "DM Sans", sans-serif;
-
-  color: var(--text);
-}
-/* Colors */
 :root {
   --primary-color: #022135;
   --dark-shades: #141216;
   --dark-accent: #637682;
   --light-shades: #f1eaed;
   --light-accent: #4aa2c0;
+
+  --text-6xl: 3.75rem;
+  --text-5xl: 3rem;
+  --text-sm: 0.875rem;
+
+  --font-light: 300;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: var(--light-shades);
+}
+
+main {
+  height: 100%;
+}
+
+.hero {
+  padding: 8rem 0 5rem;
+  background-color: var(--primary-color);
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.hero__name {
+  font-size: var(--text-6xl);
+  font-weight: var(--font-light);
+  letter-spacing: 0.25rem;
+  line-height: 1;
+  display: block;
+  color: var(--light-accent);
+}
+
+.hero__intro {
+  font-size: var(--text-sm);
+  line-height: 1.25rem;
+}
+
+.hero__image {
+  display: none;
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 li {
@@ -83,6 +122,7 @@ a {
 
 .btn-transparent {
   color: var(--light-shades);
+  border-color: var(--light-shades);
 }
 
 .btn-white {
@@ -95,6 +135,11 @@ a {
   background-color: var(--light-accent);
   border-color: var(--light-accent);
   color: var(--dark-shades);
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 1rem;
 }
 
 .cv-download {
@@ -122,10 +167,7 @@ a {
 }
 
 .nav-container {
-  display: grid;
-  padding: 1rem;
-  height: 100%;
-  width: 100%;
+  padding: 1rem 0;
 }
 
 #header-logo {
@@ -221,22 +263,6 @@ a {
 .menu .menu-btn::before,
 .menu .menu-btn::after {
   background-color: var(--light-shades);
-}
-
-.hero {
-  padding: 120px 0 80px;
-  background-color: var(--primary-color);
-
-  display: grid;
-}
-
-.hero__heading {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.hero__subheading {
-  font-weight: 600;
 }
 
 .buttons {
@@ -445,27 +471,6 @@ footer .container h3 {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .hero {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  h1 {
-    font-size: 2.25rem;
-  }
-  .hero-content #name {
-    font-size: 2.5rem;
-  }
-
-  .hero-content #occupation {
-    font-size: 3rem;
-  }
-  .buttons {
-    flex-direction: row;
-  }
-  .buttons #portfolio,
-  .buttons #hire-me {
-    margin: 0 2rem;
-  }
-
   .about-me .container {
     display: grid;
     gap: 20px;
@@ -477,6 +482,7 @@ footer .container h3 {
     border-radius: 4rem;
     margin: 0;
   }
+
   .projects-container.grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -531,12 +537,20 @@ footer .container h3 {
     text-align: right;
   }
 
-  .hero-content #name {
-    font-size: 3rem;
+  .hero {
+    padding-left: 2rem;
   }
 
-  .hero-content #occupation {
-    font-size: 3.5rem;
+  .hero__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+  }
+
+  .hero__image {
+    display: block;
+    justify-self: center;
   }
 
   .projects-container.grid {
