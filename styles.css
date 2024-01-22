@@ -411,7 +411,7 @@ a {
 }
 
 .skills-container {
-  padding: 2.25rem 0;
+  padding: 2.25rem 0 0;
 }
 
 .skills-container.grid {
@@ -476,7 +476,7 @@ a {
 
 .other-contacts a {
   color: var(--light-shades);
-  padding: 0.25rem;
+  padding: 0.25rem 0;
 
   display: flex;
   align-items: center;
