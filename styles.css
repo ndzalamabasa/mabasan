@@ -446,6 +446,11 @@ a {
 .contact {
   background-color: var(--primary-color);
 }
+
+.contact .section__header {
+  color: var(--light-shades);
+}
+
 .contact .icon {
   background-color: var(--light-accent);
   color: var(--primary-color);
