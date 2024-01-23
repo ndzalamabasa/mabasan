@@ -464,17 +464,75 @@ a {
   border-radius: 50%;
 }
 
-.other-contacts {
+.contact__details {
   padding-top: 2.25rem;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.other-contacts li {
+.contact__form {
+  margin-top: 2.25rem;
+}
+
+.contact__form ul {
+  margin-top: 0.5rem;
+}
+
+.contact__form .btn {
+  width: 100%;
+  margin-top: 3.75rem;
+}
+
+.form__control {
+  position: relative;
+  color: var(--light-shades);
+  padding: 2rem 0 0;
+}
+
+.form__control input,
+.form__control textarea {
+  background-color: transparent;
+  border: none;
+  display: block;
+  border-bottom: 2px solid var(--light-shades);
+  padding: 0.25rem 0 0.5rem;
+  margin: 0.5rem 0 1.5rem;
+  color: var(--light-shades);
+  width: 100%;
+}
+
+.form__control input:focus,
+.form__control textarea:focus {
+  outline: none;
+  border-bottom-color: var(--light-accent);
+}
+
+.form__control label {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  color: var(--light-shades);
+
+  margin-bottom: 0.5rem;
+}
+
+.form__control label span {
+  display: inline-block;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.form__control input:focus + label span,
+.form__control input:valid + label span,
+.form__control textarea:focus + label span,
+.form__control textarea:valid + label span {
+  transform: translateY(-1.5rem);
+  font-size: 0.75rem;
+  color: var(--light-accent);
+}
+
+.contact__details li {
   padding: 0.25rem 0;
 }
 
-.other-contacts a {
+.contact__details a {
   color: var(--light-shades);
   padding: 0.25rem 0;
 
@@ -526,10 +584,8 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .contact .other-contacts ul {
+  .contact__details {
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-items: center;
   }
 
   footer h3,
