@@ -466,8 +466,40 @@ a {
 
 .contact__details {
   padding-top: 2.25rem;
-  flex-direction: column;
-  justify-content: center;
+}
+
+.contact__form {
+  margin-top: 2.25rem;
+}
+
+.contact__form ul {
+  margin-top: 0.5rem;
+}
+
+.contact__form li {
+  position: relative;
+  color: var(--light-shades);
+  padding: 3rem 0 0;
+}
+
+.contact__form input,
+.contact__form textarea {
+  background-color: var(--dark-shades);
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.75rem 1rem;
+  color: var(--light-shades);
+  width: 100%;
+}
+
+.contact__form label {
+  position: absolute;
+  top: 3.5rem;
+  left: 1rem;
+  color: var(--light-shades);
+
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .contact__details li {
@@ -526,7 +558,7 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .contact .contact__details ul {
+  .contact__details {
     grid-template-columns: repeat(3, 1fr);
   }
 
