@@ -476,30 +476,56 @@ a {
   margin-top: 0.5rem;
 }
 
-.contact__form li {
-  position: relative;
-  color: var(--light-shades);
-  padding: 3rem 0 0;
+.contact__form .btn {
+  width: 100%;
+  margin-top: 3rem;
 }
 
-.contact__form input,
-.contact__form textarea {
-  background-color: var(--dark-shades);
+.form__control {
+  position: relative;
+  color: var(--light-shades);
+  padding: 2rem 0 0;
+}
+
+.form__control input,
+.form__control textarea {
+  background-color: transparent;
   border: none;
-  border-radius: 1.25rem;
-  padding: 0.75rem 1rem;
+  display: block;
+  border-bottom: 2px solid var(--light-shades);
+  padding: 0.25rem 0 0.5rem;
+  margin-top: 0.5rem;
   color: var(--light-shades);
   width: 100%;
 }
 
-.contact__form label {
+.form__control input:focus,
+.form__control textarea:focus {
+  outline: none;
+  border-bottom-color: var(--light-accent);
+}
+
+.form__control label {
   position: absolute;
-  top: 3.5rem;
-  left: 1rem;
+  top: 2.5rem;
+  left: 0;
   color: var(--light-shades);
 
-  display: block;
   margin-bottom: 0.5rem;
+}
+
+.form__control label span {
+  display: inline-block;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.form__control input:focus + label span,
+.form__control input:valid + label span,
+.form__control textarea:focus + label span,
+.form__control textarea:valid + label span {
+  transform: translateY(-1.5rem);
+  font-size: 0.75rem;
+  color: var(--light-accent);
 }
 
 .contact__details li {
