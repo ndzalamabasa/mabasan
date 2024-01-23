@@ -1,8 +1,8 @@
-let menu = document.querySelectorAll(".menu-btn");
-let mobileMenu = document.querySelector(".header-menu");
+const menu = document.querySelectorAll(".menu-btn");
+const mobileMenu = document.querySelector(".header-menu");
 const formLabels = document.querySelectorAll(".contact__form label");
 
-let showMenu = document.querySelector(".menu");
+const showMenu = document.querySelector(".menu");
 
 menu.forEach((btn) => {
   btn.addEventListener("click", () => {
