@@ -464,17 +464,17 @@ a {
   border-radius: 50%;
 }
 
-.other-contacts {
+.contact__details {
   padding-top: 2.25rem;
   flex-direction: column;
   justify-content: center;
 }
 
-.other-contacts li {
+.contact__details li {
   padding: 0.25rem 0;
 }
 
-.other-contacts a {
+.contact__details a {
   color: var(--light-shades);
   padding: 0.25rem 0;
 
@@ -526,10 +526,8 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .contact .other-contacts ul {
+  .contact .contact__details ul {
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-items: center;
   }
 
   footer h3,
