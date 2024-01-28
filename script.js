@@ -1,14 +1,13 @@
-const menu = document.querySelectorAll(".menu-btn");
-const mobileMenu = document.querySelector(".header-menu");
+const hamburger = document.getElementById("hamburger-icon");
+const navBarContainer = document.querySelector(".nav-bar__container");
 const formLabels = document.querySelectorAll(".contact__form label");
 
-const showMenu = document.querySelector(".menu");
-
-menu.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    showMenu.classList.toggle("show-menu");
-    mobileMenu.classList.toggle("menu-open");
-  });
+hamburger.addEventListener("click", () => {
+  if (navBarContainer.classList.contains("menu-open")) {
+    navBarContainer.classList.remove("menu-open");
+    return;
+  }
+  navBarContainer.classList.add("menu-open");
 });
 
 formLabels.forEach((label) => {
