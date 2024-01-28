@@ -71,10 +71,115 @@ a {
   display: none;
 }
 
-.logo {
-  width: 100%;
+/* Nav bar */
+.nav-bar {
+  position: fixed;
+  background-color: var(--primary-color);
+  width: 100vw;
+  padding: 1rem 0;
+  top: 0;
+
+  z-index: 5;
+
+  .nav-bar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-bar__logo-container {
+      width: 150px;
+      line-height: 0;
+    }
+
+    .nav-bar__logo {
+      width: 100%;
+    }
+  }
 }
 
+.hamburger-icon,
+.hamburger-icon::before,
+.hamburger-icon::after {
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 1.5rem;
+  background-color: var(--light-shades);
+  transition: transform 250ms ease-in-out;
+}
+
+.hamburger-icon {
+  width: 1rem;
+  display: block;
+  position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: "";
+  position: absolute;
+  right: 0;
+}
+
+.hamburger-icon::before {
+  bottom: 0.625rem;
+}
+
+.hamburger-icon::after {
+  top: 0.625rem;
+}
+
+.menu-open .hamburger-icon {
+  transform: rotate(45deg);
+  width: 1.5rem;
+}
+
+.menu-open .hamburger-icon::before {
+  opacity: 0;
+}
+
+.menu-open .hamburger-icon::after {
+  transform: rotate(90deg) translate(-0.625rem);
+}
+
+.nav-bar__menu {
+  z-index: -2;
+  background-color: var(--dark-shades);
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  margin-top: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.nav-bar__menu-items {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.menu-open .nav-bar__menu {
+  transform: translateX(0);
+}
+
+.menu-item {
+  padding: 0.5rem 0;
+}
+
+.menu-item:first-child {
+  justify-content: end;
+}
+
+.menu-item {
+  a {
+    color: var(--light-shades);
+    font-weight: 500;
+  }
+}
+
+/* Hero Section */
 .hero {
   padding: 8rem 0 5rem;
   background-color: var(--primary-color);
@@ -104,10 +209,6 @@ a {
   display: none;
 }
 
-.header-logo {
-  width: 150px;
-  line-height: 0;
-}
 .container {
   width: 90vw;
   max-width: 1200px;
@@ -183,116 +284,6 @@ a {
   font-size: var(--text-sm);
   line-height: 1.25rem;
   padding: 0.5rem 0;
-}
-
-/* Header */
-
-.header-menu {
-  position: fixed;
-  background-color: var(--primary-color);
-  width: 100vw;
-  top: 0;
-
-  z-index: 5;
-}
-
-.nav-container {
-  padding: 1rem 0;
-}
-
-#header-logo {
-  font-weight: 700;
-  font-size: 2rem;
-  color: var(--primary-color);
-}
-.header-menu .container {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu-btn,
-.menu-btn::before,
-.menu-btn::after {
-  width: 1.5rem;
-  height: 3px;
-  border-radius: 1.5rem;
-  background-color: var(--light-shades);
-  transition: transform 250ms ease-in-out;
-}
-
-.menu-btn {
-  width: 1rem;
-  display: block;
-  position: relative;
-}
-
-.menu-btn::before,
-.menu-btn::after {
-  content: "";
-  position: absolute;
-  right: 0;
-}
-
-.menu-btn::before {
-  bottom: 0.625rem;
-}
-
-.menu-btn::after {
-  top: 0.625rem;
-}
-
-.menu-open .menu-btn {
-  transform: rotate(45deg);
-  width: 1.5rem;
-}
-
-.menu-open .menu-btn::before {
-  opacity: 0;
-}
-
-.menu-open .menu-btn::after {
-  transform: rotate(90deg) translate(-0.625rem);
-}
-
-.menu {
-  z-index: -2;
-  background-color: var(--dark-shades);
-  width: 100%;
-  height: 100vh;
-  padding: 1rem;
-  margin-top: 5rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-}
-
-.menu ul {
-  width: 90vw;
-  margin: 0 auto;
-}
-
-.menu-open .menu {
-  transform: translateX(0);
-}
-
-.menu li {
-  padding: 0.5rem 0;
-}
-
-.menu li:first-child {
-  justify-content: end;
-}
-.menu a {
-  color: var(--light-shades);
-  font-weight: 500;
-}
-
-.menu .menu-btn,
-.menu .menu-btn::before,
-.menu .menu-btn::after {
-  background-color: var(--light-shades);
 }
 
 .buttons {
@@ -599,13 +590,14 @@ a {
   }
 }
 
-/* Desktop */
+/******************* Desktop *****************/
 @media screen and (min-width: 1024px) {
-  .header-menu .menu-btn {
+  /* Nav bar */
+  .hamburger-icon {
     display: none;
   }
 
-  .menu {
+  .nav-bar__menu {
     transform: translateY(0);
     background-color: transparent;
 
@@ -617,12 +609,12 @@ a {
     margin: 0;
   }
 
-  .menu ul {
+  .nav-bar__menu-items {
     display: flex;
     width: auto;
   }
 
-  .menu li {
+  .menu-item {
     padding: 0 0 0 1.5rem;
     text-align: right;
   }
