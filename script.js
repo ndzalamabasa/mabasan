@@ -46,7 +46,7 @@ messageSubmitBtn.addEventListener("click", async (e) => {
 
     if (response.ok) {
       feedbackHeading.textContent = "Success";
-      feedbackMessage.textContent = data.success;
+      feedbackMessage.textContent = data.message;
 
       feedbackContainer.style.backgroundColor = "var(--success-color)";
       contactFrom.reset();
