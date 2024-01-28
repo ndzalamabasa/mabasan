@@ -33,7 +33,7 @@ async function sendMessage(e) {
     "https://ancient-reef-77698-e8323d8efe20.herokuapp.com/api/v1/messages",
     {
       method: "POST",
-      credentials: "include",
+      mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },
@@ -41,12 +41,4 @@ async function sendMessage(e) {
       body: JSON.stringify(Object.fromEntries(formData)),
     }
   );
-
-  const data = await response.json();
-
-  if (data.success) {
-    alert("Message sent successfully");
-    contactFrom.reset();
-    return;
-  }
 }
