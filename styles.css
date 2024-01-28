@@ -21,6 +21,8 @@ html {
   --dark-accent: #637682;
   --light-shades: #f1eaed;
   --light-accent: #4aa2c0;
+  --success-color: #2ecc70;
+  --error-color: #e74d3c;
 
   --text-6xl: 3.75rem;
   --text-5xl: 3rem;
@@ -69,6 +71,34 @@ a {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* Feedback */
+.feedback {
+  color: var(--light-shades);
+  width: 300px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  transform: translateY(calc(-100% - 1rem));
+  transition: all 0.3s ease-in-out;
+
+  .feedback__message {
+    font-size: var(--text-sm);
+    line-height: 1.25rem;
+  }
+}
+
+.feedback.feedback--show {
+  transform: translateY(0);
 }
 
 /* Nav bar */
