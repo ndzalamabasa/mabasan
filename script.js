@@ -3,6 +3,9 @@ const navBarContainer = document.querySelector(".nav-bar__container");
 const formLabels = document.querySelectorAll(".contact__form label");
 const messageSubmitBtn = document.getElementById("send-message");
 const contactFrom = document.getElementById("contact-form");
+const feedbackContainer = document.querySelector(".feedback");
+const feedbackHeading = document.querySelector(".feedback__heading");
+const feedbackMessage = document.querySelector(".feedback__message");
 
 hamburger.addEventListener("click", () => {
   if (navBarContainer.classList.contains("menu-open")) {
@@ -22,23 +25,43 @@ formLabels.forEach((label) => {
     .join("");
 });
 
-messageSubmitBtn.addEventListener("click", sendMessage);
-
-async function sendMessage(e) {
+messageSubmitBtn.addEventListener("click", async (e) => {
   e.preventDefault();
 
-  const formData = new FormData(contactFrom);
+  try {
+    const formData = new FormData(contactFrom);
 
-  const response = await fetch(
-    "https://ancient-reef-77698-e8323d8efe20.herokuapp.com/api/v1/messages",
-    {
-      method: "POST",
-      mode: "no-cors",
-      headers: {
-        "Content-Type": "application/json",
-      },
+    const response = await fetch(
+      "https://ancient-reef-77698-e8323d8efe20.herokuapp.com/api/v1/messages",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(Object.fromEntries(formData)),
+      }
+    );
 
-      body: JSON.stringify(Object.fromEntries(formData)),
+    const data = await response.json();
+
+    if (response.ok) {
+      feedbackHeading.textContent = "Success";
+      feedbackMessage.textContent = data.success;
+
+      feedbackContainer.style.backgroundColor = "var(--success-color)";
+      contactFrom.reset();
+    } else {
+      throw new Error(data.message);
     }
-  );
-}
+  } catch (error) {
+    feedbackHeading.textContent = "Error";
+    feedbackMessage.textContent = error.message;
+
+    feedbackContainer.style.backgroundColor = "var(--error-color)";
+  } finally {
+    feedbackContainer.classList.add("feedback--show");
+    setTimeout(() => {
+      feedbackContainer.classList.remove("feedback--show");
+    }, 5000);
+  }
+});
