@@ -31,25 +31,37 @@
 </head>
 
 <body>
-  <header class="header-menu">
-    <div class="nav-container">
-      <div class="container flex">
-        <a href="index.html" class="header-logo"><img src="./assets/ndzalama_logo-light.webp" alt="ndzalama logo"
-            class="logo" /></a>
-        <nav>
-          <div class="menu-btn"></div>
-          <div class="menu">
-            <ul class="grid">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Projects</a></li>
-              <li><a href="#tech-skills">Technical Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
+  <header class="nav-bar">
+      <nav class="nav-bar__container container">
+        <a href="index.html" class="nav-bar__logo-container">
+          <img src="./assets/ndzalama_logo-light.webp" alt="ndzalama logo"
+            class="nav-bar__logo" />
+          </a>
+        <div>
+
+          <div class="hamburger-icon" id="hamburger-icon"></div>
+
+          <div class="nav-bar__menu">
+            <ul class="nav-bar__menu-items">
+              <li class="menu-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="#about">About</a>
+              </li>
+              <li class="menu-item">
+                <a href="#portfolio">Projects</a>
+              </li>
+              <li class="menu-item">
+                <a href="#tech-skills">Technical Skills</a>
+              </li>
+              <li class="menu-item">
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
-        </nav>
-      </div>
-    </div>
+        </div>
+      </nav>
   </header>
   <main>
     <header class="hero">
@@ -283,8 +295,7 @@
                 <textarea name="message" id="message" cols="30" rows="1" required></textarea>
                 <label for="message">How can I help you?</label>
               </li>
-
-              <button class="btn btn-primary" type="submit">Submit</button>
+              <button class="btn btn-primary" id="send-message" type="submit">Submit</button>
             </ul>
           </form>
         </div>
