@@ -27,6 +27,7 @@ formLabels.forEach((label) => {
 
 messageSubmitBtn.addEventListener("click", async (e) => {
   e.preventDefault();
+  messageSubmitBtn.disabled = true;
 
   try {
     const formData = new FormData(contactFrom);
@@ -62,6 +63,7 @@ messageSubmitBtn.addEventListener("click", async (e) => {
     feedbackContainer.classList.add("feedback--show");
     setTimeout(() => {
       feedbackContainer.classList.remove("feedback--show");
+      messageSubmitBtn.disabled = false;
     }, 5000);
   }
 });
