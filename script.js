@@ -61,9 +61,13 @@ messageSubmitBtn.addEventListener("click", async (e) => {
     feedbackContainer.style.backgroundColor = "var(--error-color)";
   } finally {
     feedbackContainer.classList.add("feedback--show");
+
     setTimeout(() => {
       feedbackContainer.classList.remove("feedback--show");
+      feedbackHeading.textContent = "";
+      feedbackMessage.textContent = "";
+      feedbackContainer.style.backgroundColor = "";
       messageSubmitBtn.disabled = false;
-    }, 5000);
+    }, 3000);
   }
 });
