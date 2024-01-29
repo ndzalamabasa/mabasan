@@ -396,17 +396,6 @@ a {
   padding: 1rem 1rem 1.5rem;
 }
 
-.maemo {
-  background-image: url("assets/images/maemo.jpg");
-}
-
-.dpss {
-  background-image: url("assets/images/4dpss.jpg");
-}
-.handyman {
-  background-image: url("assets/images/handyman.jpg");
-}
-
 .project__tech-stack {
   flex-wrap: wrap;
   gap: 1rem;
