@@ -73,7 +73,7 @@ p {
   max-width: 600px;
 }
 
-li {
+ul {
   list-style: none;
 }
 
@@ -389,34 +389,22 @@ a {
   background-image: url("assets/images/handyman.jpg");
 }
 
-.technologies-container {
+.project__tech-stack {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   padding: 0.5rem 0 4.5rem;
-  text-align: center;
 }
 
-.technologies {
-  display: flex;
-  justify-content: space-around;
+.tech {
+  background-color: var(--light-accent);
+  color: var(--primary-color);
+  padding: 0.125rem 0.5rem;
+  border-radius: 1rem;
 }
 
-.technologies ul li {
-  padding: 0.25rem 0;
-  list-style: circle;
-}
-
-.project-links {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-
-  color: var(--light-shades);
-  margin: 0 0.75rem;
-  text-decoration: underline;
-}
-
-.project-links i {
+.project__link {
+  color: var(--light-accent);
   padding-right: 0.5rem;
 }
 
