@@ -6,13 +6,16 @@ const contactFrom = document.getElementById("contact-form");
 const feedbackContainer = document.querySelector(".feedback");
 const feedbackHeading = document.querySelector(".feedback__heading");
 const feedbackMessage = document.querySelector(".feedback__message");
+const documentBody = document.querySelector("body");
 
 hamburger.addEventListener("click", () => {
   if (navBarContainer.classList.contains("menu-open")) {
     navBarContainer.classList.remove("menu-open");
+    documentBody.classList.remove("no-scroll");
     return;
   }
   navBarContainer.classList.add("menu-open");
+  documentBody.classList.add("no-scroll");
 });
 
 formLabels.forEach((label) => {
