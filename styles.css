@@ -37,7 +37,7 @@ html {
 body {
   font-family: "DM Sans", sans-serif;
   color: var(--light-shades);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
 }
 
 h1,
@@ -188,7 +188,7 @@ a {
   background-color: var(--primary-color);
   width: 100%;
   height: 100vh;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem 0;
   margin-top: 75px;
   position: absolute;
   top: 0;
@@ -199,7 +199,6 @@ a {
 
 .nav-bar__menu-items {
   flex-direction: column;
-  gap: 2rem;
   width: 90vw;
   margin: 0 auto;
 }
@@ -209,14 +208,16 @@ a {
 }
 
 .menu-item {
-  padding: 0.5rem 0;
-}
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0.5rem;
+  border-bottom: 1px solid var(--dark-accent);
 
-.menu-item:first-child {
-  justify-content: end;
-}
+  i {
+    color: var(--light-accent);
+  }
 
-.menu-item {
   a {
     font-size: var(--text-lg);
     line-height: 1.75rem;
@@ -246,7 +247,6 @@ a {
 }
 
 .hero__intro {
-  font-size: var(--text-sm);
   line-height: 1.25rem;
 }
 
@@ -328,8 +328,7 @@ a {
 .section__description {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  font-size: var(--text-sm);
+  gap: 1.5rem;
   line-height: 1.25rem;
   padding: 0.5rem 0;
 
@@ -674,12 +673,19 @@ a {
   }
 
   .nav-bar__menu-items {
+    flex-direction: row;
     width: auto;
+    gap: 3rem;
   }
 
   .menu-item {
     padding: 0 0 0 1.5rem;
+    border: 0;
     text-align: right;
+  }
+
+  .menu-item i {
+    display: none;
   }
 
   .hero {
