@@ -573,7 +573,6 @@ a {
   background-color: var(--light-shades);
   border-radius: 2rem;
   padding: 0.25rem;
-  max-width: 300px;
 
   a {
     color: var(--primary-color);
