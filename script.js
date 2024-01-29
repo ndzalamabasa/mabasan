@@ -58,6 +58,9 @@ messageSubmitBtn.addEventListener("click", async (e) => {
     }
   } catch (error) {
     feedbackHeading.textContent = "Error";
+    if (error.message === "Failed to fetch") {
+      error.message = "Something went wrong, please try again.";
+    }
     feedbackMessage.textContent = error.message;
 
     feedbackContainer.style.backgroundColor = "var(--error-color)";
