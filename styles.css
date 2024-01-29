@@ -621,7 +621,7 @@ a {
 
 /******************* Desktop *****************/
 @media screen and (min-width: 1024px) {
-  .section__header {
+  .section-content > .section__header {
     font-size: var(--text-5xl);
   }
 
