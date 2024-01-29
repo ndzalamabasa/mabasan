@@ -679,13 +679,14 @@ a {
   }
 
   .menu-item {
-    padding: 0 0 0 1.5rem;
-    border: 0;
-    text-align: right;
-  }
-
-  .menu-item i {
-    display: none;
+    a {
+      padding: 0 0 0 1.5rem;
+      border: 0;
+      text-align: right;
+    }
+    i {
+      display: none;
+    }
   }
 
   .hero {
