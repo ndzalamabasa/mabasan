@@ -40,6 +40,10 @@ body {
   letter-spacing: 0.025em;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -89,6 +93,9 @@ a {
   width: 90vw;
   max-width: 1200px;
   margin: 0 auto;
+}
+.no-scroll {
+  overflow: hidden;
 }
 
 /* Utility classes */
