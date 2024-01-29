@@ -208,11 +208,13 @@ a {
 }
 
 .menu-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.5rem 0.5rem;
-  border-bottom: 1px solid var(--dark-accent);
+  a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0.5rem;
+    border-bottom: 1px solid var(--dark-accent);
+  }
 
   i {
     color: var(--light-accent);
