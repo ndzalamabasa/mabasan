@@ -621,6 +621,10 @@ a {
 
 /******************* Desktop *****************/
 @media screen and (min-width: 1024px) {
+  .section__header {
+    font-size: var(--text-5xl);
+  }
+
   /* Nav bar */
   .hamburger-icon {
     display: none;
