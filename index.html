@@ -78,7 +78,7 @@
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#portfolio">
+                <a href="#projects">
                   <i class="fa-solid fa-laptop-code fa-xl"></i>
                   Projects
                 </a>
@@ -103,7 +103,7 @@
     <main>
       <header class="hero">
         <div class="hero__content container">
-          <section class="hero__text">
+          <section class="hero__text-container">
             <p class="hero__heading">
               Hi there, I am <span class="hero__name">Ndzalama Mabasa</span>
             </p>
@@ -134,15 +134,19 @@
 
       <div class="about section__container" id="about">
         <div class="container">
-          <div class="img-container">
-            <img src="./assets/images/web-dev.jpg" alt="laptop" />
+          <div>
+            <img
+              src="./assets/images/web-dev.jpg"
+              alt="laptop"
+              class="about__image"
+            />
           </div>
-          <section class="about-me-content section-content">
+          <section class="section-content">
             <h2 class="flex section__header">
               <img src="./assets/images/arrow.svg" alt="arrow" />About me
             </h2>
 
-            <div class="section__description">
+            <div class="about__content">
               <p>
                 I am a mobile and web app developer with a robust
                 problem-solving skills, team work, and a proven proficiency in
@@ -174,102 +178,97 @@
               </p>
 
               <a
-                href="./assets/Ndzalama_Mabasa.pdf"
+                href="#contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn-primary cv-download btn"
-                >See My CV</a
+                >Get In Touch</a
               >
             </div>
           </section>
         </div>
       </div>
 
-      <div class="portfolio section__container" id="projects">
+      <div class="projects section__container" id="projects">
         <div class="container">
-          <section class="portfolio-content section-content">
+          <section class="section-content">
             <h2 class="flex section__header">
               <img src="./assets/images/arrow.svg" alt="arrow" />Projects
             </h2>
           </section>
           <!-- TODO: Projects to be stored on the database, and fetched from there -->
-          <div class="projects-container grid">
-            <div class="project handyman">
-              <h3>Handyman Installation</h3>
-              <p>
-                Custom designed website for Handyman Installation, an
-                installations company.
-              </p>
-              <div class="technologies-container">
-                <h4>TECH-STACK</h4>
-                <div class="technologies">
-                  <ul class="tech-1">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                  </ul>
-                  <ul class="tech-2">
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="project-links">
-                <a
-                  href="https://handymaninstallation.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fas fa-globe fa-lg"></i><span>Website</span>
-                </a>
-              </div>
+          <div class="projects__container grid">
+            <div class="project grid">
+              <img
+                src="./assets/images/iccasa.jpg"
+                alt=""
+                class="project__image"
+              />
+              <section class="project__details flex">
+                <h3 class="project__name flex">
+                  Iccasa
+                  <i class="fa-solid fa-arrow-up-right-from-square bx-xs"></i>
+                </h3>
+                <p>
+                  A website for Iccasa, industries certification company. The
+                  functionalities includes an application form which after
+                  completion gets sent to the admin as a PDF and a way to
+                  comtact the institution within the website.
+                </p>
+                <ul class="project__tech-stack flex">
+                  <li class="tech">WordPress</li>
+                </ul>
+              </section>
             </div>
 
-            <div class="project maemo">
-              <h3>Maemo1 Medicals</h3>
-              <p>
-                Website for Maemo1 Medicals, an Occupational Health Care
-                Services Provider.
-              </p>
-              <div class="technologies-container">
-                <h4>TECH-STACK</h4>
-                <div class="technologies">
-                  <ul class="tech-1">
-                    <li>WordPress</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://maemo1medicals.co.za/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fas fa-globe fa-lg"></i><span>Website</span>
-                </a>
-              </div>
+            <div class="project grid">
+              <img
+                src="./assets/images/qpay.jpg"
+                alt=""
+                class="project__image"
+              />
+              <section class="project__details flex">
+                <h3 class="project__name flex">
+                  Q Pay
+                  <i class="fa-solid fa-arrow-up-right-from-square bx-xs"></i>
+                </h3>
+                <p>
+                  Food Ordering system with the functionalities that include an
+                  option to choose the type of order, access of order from the
+                  kitchen side and management of staff and food ordering from
+                  the admin side.
+                </p>
+                <ul class="project__tech-stack flex">
+                  <li class="tech">HTML5</li>
+                  <li class="tech">SASS</li>
+                  <li class="tech">PHP</li>
+                  <li class="tech">JavaScript</li>
+                  <li class="tech">MySql</li>
+                </ul>
+              </section>
             </div>
 
-            <div class="project dpss">
-              <h3>4DPSS</h3>
-              <p>
-                Website for 4D Proactive Security Services (4DPSS), a Security
-                Services Provider.
-              </p>
-              <div class="technologies-container">
-                <h4>TECH-STACK</h4>
-                <div class="technologies">
-                  <ul class="tech-1">
-                    <li>WordPress</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://4dpss.co.za/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fas fa-globe fa-lg"></i><span>Website</span>
-                </a>
-              </div>
+            <div class="project grid">
+              <img
+                src="./assets/images/maemo.jpg"
+                alt=""
+                class="project__image"
+              />
+              <section class="project__details flex">
+                <h3 class="project__name flex">
+                  Maemo1 Medicals
+                  <i class="fa-solid fa-arrow-up-right-from-square bx-xs"></i>
+                </h3>
+                <p>
+                  Website for Maemo1 Medicals, an Occupational Health Care
+                  Services Provider. The website functionalities include a
+                  contact form integration that allows a visitor to contact the
+                  institution without leaving the website.
+                </p>
+                <ul class="project__tech-stack flex">
+                  <li class="tech">WordPress</li>
+                </ul>
+              </section>
             </div>
           </div>
         </div>
