@@ -85,6 +85,69 @@ a {
   display: none;
 }
 
+.container {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--dark-accent);
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  text-transform: capitalize;
+
+  width: max-content;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(0.95);
+}
+
+.btn-transparent {
+  color: var(--light-shades);
+  border-color: var(--light-shades);
+}
+
+.btn-primary {
+  background-color: var(--light-accent);
+  border-color: var(--light-accent);
+  color: var(--dark-shades);
+}
+
+.section__container {
+  color: var(--primary-color);
+  padding: 5rem 0;
+}
+
+.section__header {
+  gap: 0.5rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 /* Feedback */
 .feedback {
   color: var(--light-shades);
@@ -234,7 +297,7 @@ a {
   background-color: var(--primary-color);
 }
 
-.hero__text {
+.hero__text-container {
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
@@ -252,82 +315,17 @@ a {
   line-height: 1.25rem;
 }
 
-.hero__image {
-  display: none;
-}
-
-.container {
-  width: 90vw;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--dark-accent);
-  border-radius: 1.5rem;
-  padding: 0.5rem 1.25rem;
-  text-align: center;
-
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 600;
-  text-transform: capitalize;
-
-  width: max-content;
-  transition: transform 0.2s ease-in-out;
-}
-
-.btn:hover {
-  transform: scale(0.95);
-}
-
-.btn-transparent {
-  color: var(--light-shades);
-  border-color: var(--light-shades);
-}
-
-.btn-white {
-  background-color: var(--light-shades);
-  border-color: var(--light-shades);
-  color: var(--primary-color);
-}
-
-.btn-primary {
-  background-color: var(--light-accent);
-  border-color: var(--light-accent);
-  color: var(--dark-shades);
-}
-
 .hero__buttons {
   display: flex;
   gap: 1rem;
 }
 
-.cv-download {
-  margin-top: 2rem;
+.hero__image {
+  display: none;
 }
 
-.section__container {
-  color: var(--primary-color);
-  padding: 5rem 0;
-}
-
-.section__header {
-  gap: 0.5rem;
-}
-
-.section__description {
+/* About Section */
+.about__content {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -345,44 +343,26 @@ a {
   }
 }
 
-.buttons {
-  position: relative;
-  bottom: 0;
-  flex-direction: column;
-}
-
-.buttons #hire-me {
-  margin-top: 1.5rem;
-}
-
-/* About Me */
-
-.section-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
 .about .container {
   display: grid;
   gap: 2.5rem;
 }
 
-.img-container img {
+.about__image {
   width: 100%;
   border-radius: 2rem;
 }
 
-/* Portfolio */
-.portfolio {
+/* Projects */
+.projects {
   background-color: var(--dark-accent);
 }
 
-.portfolio .projects-container {
+.projects-container {
   padding-top: 2.5rem;
 }
 
-.portfolio .project {
+.project {
   position: relative;
   margin: 1rem 0;
   padding: 1rem 0.75rem;
@@ -391,49 +371,30 @@ a {
   border-radius: 2rem;
   border-bottom: 10px solid var(--);
   text-align: center;
-}
 
-.project {
-  position: relative;
-  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
 }
 
 .maemo {
-  background: url("assets/images/maemo.jpg") no-repeat center/cover;
-  background-blend-mode: multiply;
+  background-image: url("assets/images/maemo.jpg");
 }
 
 .dpss {
   background-image: url("assets/images/4dpss.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
 }
 .handyman {
   background-image: url("assets/images/handyman.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
 }
 
-.project h2 {
-  color: var(--light-shades);
-  text-align: center;
-}
-
-.project p {
-  padding: 1rem 0;
-}
 .technologies-container {
   padding: 0.5rem 0 4.5rem;
   text-align: center;
 }
-.technologies-container h4 {
-  padding: 1rem 0;
-}
-.project .technologies {
+
+.technologies {
   display: flex;
   justify-content: space-around;
 }
@@ -442,15 +403,14 @@ a {
   padding: 0.25rem 0;
   list-style: circle;
 }
-.project .project-links {
+
+.project-links {
   position: absolute;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 1.75rem;
   text-align: center;
-}
-.project-links a {
+
   color: var(--light-shades);
   margin: 0 0.75rem;
   text-decoration: underline;
@@ -469,8 +429,7 @@ a {
   padding-top: 2.5rem;
 }
 
-.skills-container.grid {
-  grid-template-columns: repeat(2, 1fr);
+.skills-container {
   gap: 3rem 1rem;
   justify-items: center;
   align-items: center;
@@ -482,7 +441,7 @@ a {
 
 .skill {
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   font-size: 1.125rem;
   font-weight: 600;
   background-color: var(--primary-color);
@@ -617,13 +576,13 @@ a {
     align-items: center;
   }
 
-  .projects-container.grid {
+  .projects-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
-  .skills-container.grid {
-    grid-template-columns: repeat(4, 1fr);
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .contact__container {
@@ -709,13 +668,13 @@ a {
     padding: 5rem 2rem;
   }
 
-  .projects-container.grid {
+  .projects-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
-  .skills-container.grid {
-    grid-template-columns: repeat(5, 1fr);
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .contact .container {
