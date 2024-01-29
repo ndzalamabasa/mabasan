@@ -94,6 +94,7 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .no-scroll {
   overflow: hidden;
 }
@@ -628,6 +629,10 @@ a {
 
 /******************* Desktop *****************/
 @media screen and (min-width: 1024px) {
+  .no-scroll {
+    overflow: auto;
+  }
+
   .section-content > .section__header {
     font-size: var(--text-5xl);
   }
