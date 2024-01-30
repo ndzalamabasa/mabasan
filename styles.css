@@ -410,8 +410,8 @@ a {
 }
 
 .tech {
-  background-color: var(--dark-accent);
-  color: var(--light-shades);
+  background-color: var(--light-accent);
+  color: var(--dark-shades);
   padding: 0.125rem 0.5rem;
   border-radius: 1rem;
 }
