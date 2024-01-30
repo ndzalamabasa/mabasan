@@ -109,9 +109,8 @@ a {
 }
 
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
+  text-align: center;
   border: 2px solid var(--dark-accent);
   border-radius: 1.5rem;
   padding: 0.5rem 1.25rem;
@@ -200,7 +199,7 @@ a {
     align-items: center;
 
     .nav-bar__logo-container {
-      width: 150px;
+      width: 175px;
       line-height: 0;
     }
 
