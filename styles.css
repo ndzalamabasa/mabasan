@@ -326,6 +326,7 @@ a {
 .hero__buttons {
   display: flex;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .hero__image {
@@ -442,6 +443,7 @@ a {
 }
 
 .skill {
+  grid-template-columns: 1fr 2fr;
   align-items: center;
   gap: 1rem;
   font-size: 1.125rem;
