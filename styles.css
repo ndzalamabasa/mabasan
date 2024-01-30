@@ -20,6 +20,7 @@ html {
   --dark-shades: #141216;
   --dark-accent: #637682;
   --light-shades: #f1eaed;
+  --dark-shades-100: #63768259;
   --light-accent: #4aa2c0;
   --success-color: #2ecc70;
   --error-color: #e74d3c;
@@ -142,7 +143,7 @@ a {
 
 .section__container {
   color: var(--primary-color);
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 
 .section__header {
@@ -337,7 +338,7 @@ a {
   flex-direction: column;
   gap: 1.5rem;
   line-height: 1.25rem;
-  padding: 0.5rem 0;
+  padding: 1.25rem 0 2rem;
 
   p a {
     color: var(--dark-shades);
@@ -455,7 +456,7 @@ a {
 
 .skill i {
   background-color: var(--light-accent);
-  padding: 0.375rem 0.75rem;
+  padding: 0.75rem 1.25rem;
 }
 /* Contact */
 .contact .container {
@@ -466,6 +467,14 @@ a {
 
 .contact .section__header {
   color: var(--light-shades);
+}
+
+.contact.section__container {
+  background-color: var(--dark-shades-100);
+}
+
+.contact .section-content > .section__header {
+  color: var(--light-accent);
 }
 
 .contact .icon {
@@ -497,7 +506,7 @@ a {
 
 .send-message {
   width: 100%;
-  margin-top: 3.75rem;
+  margin-top: 2.75rem;
 }
 
 .form__control {
@@ -550,7 +559,7 @@ a {
 .contact__details-item {
   background-color: var(--light-shades);
   border-radius: 2rem;
-  padding: 0.25rem;
+  padding: 0.5rem;
 
   a {
     color: var(--primary-color);
@@ -560,13 +569,18 @@ a {
   }
 }
 
+.contact__details-item:first-child {
+  background-color: transparent;
+  color: var(--light-shades);
+  padding-bottom: 1rem;
+}
+
 /* Footer */
 
 .copyright {
   text-align: center;
   color: var(--primary-color);
-  padding: 1.25rem 0;
-  border-top: 1px solid var(--primary-color);
+  padding: 2rem 0;
 }
 
 /* Tablet */
@@ -614,6 +628,9 @@ a {
 
   .contact__form {
     margin-top: 2rem;
+    border-radius: 2rem;
+    background-color: var(--dark-shades);
+    padding: 1.75rem;
   }
 
   footer h3,
@@ -688,7 +705,7 @@ a {
   }
 
   .section__container {
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
   }
 
   .skills-container {
