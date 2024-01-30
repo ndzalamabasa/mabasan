@@ -388,6 +388,14 @@ a {
   justify-content: space-between;
 }
 
+.project__state {
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--light-accent);
+  font-size: var(--text-sm);
+  font-weight: 400;
+}
+
 .project__details {
   flex-direction: column;
   justify-content: center;
@@ -592,6 +600,10 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+  }
+
+  .contact_me {
+    width: 100%;
   }
 
   .contact__details {
