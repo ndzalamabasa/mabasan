@@ -7,6 +7,7 @@ const feedbackContainer = document.querySelector(".feedback");
 const feedbackHeading = document.querySelector(".feedback__heading");
 const feedbackMessage = document.querySelector(".feedback__message");
 const documentBody = document.querySelector("body");
+const menuItems = document.querySelectorAll(".menu-item");
 
 hamburger.addEventListener("click", () => {
   if (navBarContainer.classList.contains("menu-open")) {
@@ -16,6 +17,13 @@ hamburger.addEventListener("click", () => {
   }
   navBarContainer.classList.add("menu-open");
   documentBody.classList.add("no-scroll");
+});
+
+menuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navBarContainer.classList.remove("menu-open");
+    documentBody.classList.remove("no-scroll");
+  });
 });
 
 formLabels.forEach((label) => {
