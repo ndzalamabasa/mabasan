@@ -152,7 +152,6 @@ a {
 }
 
 .section-content {
-  display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
@@ -164,7 +163,6 @@ a {
   border-radius: 0.5rem;
   padding: 1rem;
 
-  display: flex;
   flex-direction: column;
   gap: 0.5rem;
 
@@ -196,7 +194,6 @@ a {
   z-index: 5;
 
   .nav-bar__container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 
@@ -307,7 +304,6 @@ a {
 }
 
 .hero__text-container {
-  display: flex;
   flex-direction: column;
   gap: 1.75rem;
 }
@@ -325,7 +321,6 @@ a {
 }
 
 .hero__buttons {
-  display: flex;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -336,7 +331,6 @@ a {
 
 /* About */
 .about__content {
-  display: flex;
   flex-direction: column;
   gap: 1.5rem;
   line-height: 1.25rem;
@@ -556,7 +550,7 @@ a {
 .contact .icon {
   background-color: var(--light-accent);
   color: var(--primary-color);
-  display: flex;
+
   align-items: center;
   justify-content: center;
 
